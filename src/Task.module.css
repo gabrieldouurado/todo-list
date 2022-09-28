@@ -1,0 +1,73 @@
+.task {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 0fr 1fr 0fr;
+    padding: 1rem;
+    margin-bottom: 12px;
+
+    border: 1px solid var(--gray-400);
+    border-radius: 8px;
+
+    background-color: var(--gray-500);
+}
+
+.task p {
+    max-width: 41rem;
+    padding: 0 12px;
+
+    font-size: 0.875rem;
+}
+
+.task:has(div.checkedCircle) > p {
+    text-decoration: line-through;
+    color: var(--gray-300);
+}
+
+.checkedCircle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 18px;
+    height: 18px;
+
+    border-radius: 999px;
+
+    font-size: 0.75rem;
+
+    color: var(--gray-100);
+    background-color: var(--purple-dark);
+
+    transition: background-color 0.1s;
+}
+
+.checkedCircle:hover {
+    background-color: var(--purple);
+}
+
+.uncheckedCircle {
+    width: 18px;
+    height: 18px;
+
+    border: 2px solid;
+    border-radius: 999px;
+
+    font-size: 1.5rem;
+
+    color: var(--blue);
+
+    transition: color 0.1s;
+}
+
+.uncheckedCircle:hover {
+    color: var(--purple);
+}
+
+.trash {
+    color: var(--gray-300);
+    transition: color 0.2s;
+}
+
+.trash:hover {
+    color: var(--danger);
+}

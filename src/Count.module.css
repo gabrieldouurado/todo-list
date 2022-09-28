@@ -1,0 +1,10 @@
+.count {
+    padding: 0rem 0.6rem;
+
+    border-radius: 999px;
+
+    font-size: 0.75rem;
+    
+    color: var(--gray-200);
+    background-color: var(--gray-400);
+}
