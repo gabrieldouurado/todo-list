@@ -1,0 +1,13 @@
+{
+  "project-name": "To Do List",
+  "little-description": "Organize suas atividades com o To Do List",
+  "full-description": "Projeto de uma lista de atividades criado com ReactJS. O projeto utiliza apenas os recursos próprios do React",
+  "screenshots": [
+    {
+      "name": "pagina-inicial",
+      "path": "/assets/pagina-inicial.png"
+    }
+  ],
+  "stack": ["ReactJS", "typescript", "CSS Modules", "Vite"],
+  "tags": ["frontend"]
+}   
